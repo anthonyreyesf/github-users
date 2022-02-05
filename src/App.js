@@ -14,6 +14,7 @@ function App() {
 
   return (
     <S.Root>
+      <p>Technology used: JavaScript, React and styled-components</p>
       <input type="text" placeholder="ex.Elon Musk" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
       {users && <Table data={users}/>}
     </S.Root>
