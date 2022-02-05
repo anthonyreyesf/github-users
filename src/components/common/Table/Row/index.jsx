@@ -10,7 +10,7 @@ export default function Row(props) {
     fetch(`${followersDataUrl}+per_page:100`)
       .then((res) => res.json())
       .then((data) => setFollowersCount(data.length));
-  });
+  }, []);
 
   function renderFollowers() {
     if (followersCount > 100) {
